@@ -1,0 +1,19 @@
+.icon {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  background-image: url('..//images/logo/cappo.png');
+  /* 替換成你的圖案 URL */
+  background-size: cover;
+  border-radius: 50%;
+  /* 如果希望是圓形，可保留這行 */
+  pointer-events: none;
+  animation: disappear 0.8s ease-out forwards;
+}
+
+@keyframes disappear {
+  100% {
+      transform: scale(1.5);
+      opacity: 0;
+  }
+}
